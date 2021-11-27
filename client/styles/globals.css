@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#f3f2ef]
+  }
+  input {
+    @apply appearance-none
+  }
+}
+
+@layer components {
+  .icon {
+    @apply h-8  p-1 flex flex-col justify-center items-center w-full object-contain hover:cursor-pointer text-gray-500
+  }
+  .active {
+    @apply h-8  p-1 flex flex-col justify-center items-center w-full object-contain hover:cursor-pointer text-gray-800 
+  }
+  .hover-class {
+    @apply hover:cursor-pointer hover:bg-gray-100
+  }
+
+}
+
+/* input[type="email"],
+input[type="password"],
+inpu[type="email"]:focus,
+input[type="password"]:focus {
+  -webkit-box-shadow: 0 0 0 30px white inset;
+} */
+
+.custom-input {
+  -webkit-box-shadow: 0 0 0 30px white inset;
+}
+
+.loader {
+  border-top-color: #3498db;
+  -webkit-animation: spinner 1.5s linear infinite;
+  animation: spinner 1.5s linear infinite;
+}
+
+@-webkit-keyframes spinner {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spinner {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

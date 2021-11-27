@@ -1,0 +1,8 @@
+{
+    "files.autoSave": "afterDelay",
+    "editor.fontSize": 18,
+    "editor.fontFamily": "Fira Code, Consolas, 'Courier New', monospace",
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact"
+    }
+}
